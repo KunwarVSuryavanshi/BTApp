@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     TextView timersec;
     GridLayout gridlay;
     Button playz;
-
     public void correctAns(View view)
     {
         if(view.getTag().equals(Integer.toString(correctLocation)))
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            result.setText("Wrong Answer :(");
+            result.setText("Wrong :( ");
         }
         numberofques++;
         scoreText.setText(Integer.toString(score)+"/"+Integer.toString(numberofques));
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         result.setText("");
         playz.setVisibility(View.INVISIBLE);
         frameQues();
-        new CountDownTimer(3100,1000)
+        new CountDownTimer(31000,1000)
         {
 
             @Override
@@ -113,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         scoreText= (TextView) findViewById(R.id.scoreTextView);
         timersec = (TextView) findViewById(R.id.timersec);
         playz = (Button) findViewById(R.id.playz);
-        gridlay = (GridLayout) findViewById(R.id.gridLay);
-        playAgain( findViewById(R.id.playz));
+    //    gridlay = (GridLayout) findViewById(R.id.gridLay);
+        playAgain(findViewById(R.id.scoreTextView));
     }
 }

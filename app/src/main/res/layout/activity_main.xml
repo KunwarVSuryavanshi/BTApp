@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back1"
     tools:context=".MainActivity">
 
     <TextView
@@ -41,7 +42,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        android:backgroundTintMode="screen"
+        android:background="@color/colorAccent"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:text="13 + 12"
@@ -64,53 +65,59 @@
             android:id="@+id/bop1"
             android:layout_width="167dp"
             android:layout_height="100dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/back1"
             android:onClick="correctAns"
             android:tag="0"
             android:text="op1"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/bop2"
             android:layout_width="167dp"
             android:layout_height="100dp"
-            android:background="@android:color/holo_red_dark"
+            android:background="@drawable/back1"
             android:onClick="correctAns"
             android:tag="1"
             android:text="op2"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/bop3"
             android:layout_width="167dp"
             android:layout_height="100dp"
-            android:background="@android:color/holo_orange_light"
+            android:background="@drawable/back1"
             android:onClick="correctAns"
             android:tag="2"
             android:text="op3"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/bop4"
             android:layout_width="167dp"
             android:layout_height="100dp"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@drawable/back1"
             android:onClick="correctAns"
             android:tag="3"
             android:text="op4"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
     </android.support.v7.widget.GridLayout>
 
     <TextView
         android:id="@+id/resultTextview"
-        android:layout_width="168dp"
-        android:layout_height="36dp"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="106dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="80dp"
         android:paddingLeft="20dp"
+        android:gravity="center"
         android:text="Correct !!"
+        android:textColor="@color/colorAccent"
         android:textSize="30dp"
         android:textStyle="italic"
         android:visibility="visible" />
@@ -121,7 +128,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:onClick="playAgain"
         android:text="Play Again"
+        android:textColor="@color/colorAccent"
         android:textStyle="bold|italic"
         android:visibility="invisible" />
 
